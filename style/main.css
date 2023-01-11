@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* colors */
+    --c-primary: #f7a100;
+    --c-secundary: #0071B3;
+    --c-default: #fff;
+    --c-invert: #333;
+    /* width */
+    --w-full: 100%;
+    --w-100: 100em;
+
+    /* --c-alert: #E30059;
+    --c-warning: #FFD05F;
+    --c-succes: #25AE93;
+    --c-info: #606eb3; */
+}
+
+::selection {
+    background-color: var(--c-primary);
+    color: var(--c-default);
+}
+
+/* Basic settings */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    background-color: var(--c-default);
+}
+
+header {
+    width: 100%;
+    height: 4em;
+    background-color: var(--c-primary);
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+header nav {
+    position: absolute;
+    right: 1em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+main {
+    display: block;
+    position: relative;
+}
+
+section {
+    display: block;
+}
+
+.hero {
+    width: var(--w-full);
+}
+
+.product-hero {
+    width: fit-content;
+    background-color: var(--c-primary);
+    color: var(--c-default);
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 1em;
+    padding-right: 2em;
+    position: absolute;
+    right: 0;
+    transform: translateY(-5em);
+}
+
+.product-images {
+    padding-top: 5em;
+}
+
+ul {
+
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    width: 5em;
+    height: auto;
+    display: block;
+}
+
+/* typography */
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+
+}
+
+.price::after {
+    content: '.000';
+    font-size: 0.66em;
+    padding-bottom: 10px;
+}
+
+sup {
+    font-size: 0.5em;
+}
+
+/* Image */
+img {
+    width: 20em;
+}
