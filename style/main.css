@@ -9,11 +9,18 @@
     /* colors */
     --c-primary: #f7a100;
     --c-secundary: #0071B3;
+    --c-secundary-accent: #d4e9ff;
     --c-default: #fff;
     --c-invert: #333;
     /* width */
     --w-full: 100%;
-    --w-100: 100em;
+    --w-half: 50vw;
+    --w-quarter: 25vw;
+
+    /* Space defaults */
+    --em-small: 0.5em;
+    --em-default: 1em;
+    --em-medium: 2em;
 
     /* --c-alert: #E30059;
     --c-warning: #FFD05F;
@@ -22,8 +29,8 @@
 }
 
 ::selection {
-    background-color: var(--c-primary);
-    color: var(--c-default);
+    background-color: rgba(247, 161, 0, 0.33);
+    color: var(--c-invert);
 }
 
 /* Basic settings */
@@ -42,23 +49,29 @@ header {
     background-color: var(--c-primary);
     display: flex;
     align-items: center;
-    padding: 1em;
+    padding: var(--em-default);
 }
 
 header nav {
     position: absolute;
-    right: 1em;
+    right: var(--em-default);
 }
 
 header nav ul {
     display: flex;
-    gap: 1em;
+    gap: var(--em-default);
 }
 
 main {
     display: block;
     position: relative;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* sections */
 
 section {
     display: block;
@@ -73,16 +86,95 @@ section {
     background-color: var(--c-primary);
     color: var(--c-default);
     border-radius: 0.5em 0 0 0.5em;
-    padding: 1em;
-    padding-right: 2em;
+    padding: var(--em-default);
+    padding-right: var(--em-medium);
     position: absolute;
     right: 0;
     transform: translateY(-5em);
 }
 
-.product-images {
-    padding-top: 5em;
+.product-hero h2, h3 {
+    color: var(--c-default);
 }
+
+.product-hero sup {
+    font-size: 0.5em;
+}
+
+.product-images {
+    padding: 5em 0 1em;
+    display: flex;
+    overflow: scroll;
+    gap: var(--em-small);
+}
+
+.product-images img {
+    width: 10em;
+}
+
+.product-info {
+    background-color: var(--c-secundary-accent);
+    padding: var(--em-small) var(--em-medium);
+}
+
+.product-info ul {
+    width: fit-content;
+    display: block;
+    gap: var(--em-default);
+}
+
+.product-info li {
+    color: var(--c-secundary);
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.product-info svg {
+    margin-right: 0.5em;
+}
+
+.product-info sup {
+    font-size: 0.8em;
+}
+
+.product-summary {
+    padding: var(--em-default);
+}
+
+.product-summary p + h2, h3 {
+    padding-top: var(--em-default);
+    color: var(--c-primary);
+}
+
+.product-summary ul + strong {
+    padding-top: var(--em-default);
+}
+
+.product-summary li {
+    padding-bottom: 0.4em;
+}
+
+.product-features {
+    padding: var(--em-default);
+}
+
+.product-features h2 + h3 {
+    padding: 0;
+}
+
+iframe {
+    width: var(--w-full);
+}
+
+.product-comparable {
+    padding: var(--em-default);
+}
+
+.product-actions {
+    padding: var(--em-default);
+}
+
 
 ul {
 
@@ -90,6 +182,7 @@ ul {
 
 li {
     list-style: none;
+    max-width: 30em;
 }
 
 .logo {
@@ -98,20 +191,22 @@ li {
     display: block;
 }
 
-/* typography */
+/* Typography */
 
 h1 {
-    font-size: 2em;
+    font-size: var(--em-medium);
 }
 
 h2 {
-
+    color: var(--c-primary);
 }
 
-.price::after {
-    content: '.000';
-    font-size: 0.66em;
-    padding-bottom: 10px;
+h3 {
+    color: var(--c-primary);
+}
+
+p {
+    max-width: 30em;
 }
 
 sup {
@@ -119,6 +214,83 @@ sup {
 }
 
 /* Image */
-img {
-    width: 20em;
+/* img {
+    width: 10em;
+} */
+
+footer {
+    background-color: var(--c-secundary);
+    padding: var(--em-default);
 }
+
+/* --------- - --------- - --------- */
+/* Keyframes */
+/* --------- - --------- - --------- */
+
+
+
+/* --------- - --------- - --------- */
+/* Media queries for responsiveness*/
+/* --------- - --------- - --------- */
+
+/* Extra Small screen */
+@media (min-width: 20em) {
+
+    .hero-save-n-share {
+        display: none;
+    }
+    
+    .product-hero {
+        display: flex;
+        padding: var(--em-default);
+        padding-right: var(--em-default);
+        padding-right: var(--em-medium);
+        position: absolute;
+        transform: translateY(-5em);
+    }
+
+    .product-hero div {
+        padding: var(--em-small);
+    }
+
+    .product-hero-map {
+        display: none;
+    }
+
+}
+
+/* Small screen */
+@media (min-width: 30em) {
+
+    .hero-save-n-share {
+        display: flex;
+        position: absolute;
+        transform: translateY(-6em);
+        padding: var(--em-default);
+        gap: var(--em-default);
+        width: var(--w-quarter);
+        flex-wrap: wrap;
+    }
+
+    .product-hero {
+        padding: var(--em-default);
+        padding-right: var(--em-default);
+        padding-right: 4em;
+    }
+
+    .product-hero-map {
+        display: block;
+    }
+
+
+
+    .product-images img {
+        width: 15em;
+    }
+}
+
+/* Medium screen */
+@media (min-width: 48em) {
+    
+}
+
