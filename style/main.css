@@ -156,6 +156,10 @@ section p {
     width: var(--w-full);
 }
 
+.hero img {
+    width: var(--w-full);
+}
+
 .hero-save-n-share {
     display: flex;
     position: absolute;
@@ -443,6 +447,14 @@ footer a {
         width: 75vw;
         padding: var(--em-default);
         padding-right: var(--em-default);
+    }
+}
+
+/* Large screen */
+@media (min-width: 75em) {
+    
+    .hero {
+        width: var(--w-full);
     }
 }
 
