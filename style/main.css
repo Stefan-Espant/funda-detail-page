@@ -207,6 +207,23 @@ section p {
     font-size: 0.5em;
 }
 
+.hero-map a svg {
+    mix-blend-mode: normal;
+    transition: var(--a-default) ease-in-out;
+}
+
+.hero-map a:hover svg {
+    animation: map var(--a-default) forwards;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1), 0px 4px 5px -2px rgba(0, 0, 0, 0.12), 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-map a:focus {
+    outline: 0.1em solid var(--c-default);
+    border-radius: var(--br-small);
+}
+
+
+
 .hero-impression {
     display: flex;
 }
@@ -389,7 +406,16 @@ footer a {
 /* Keyframes */
 /* --------- - --------- - --------- */
 
+@keyframes map {
+    10% {
+        transform: perspective(1.5em) rotateX(10deg);
+    }
 
+    100% {
+        /* transform: perspective(2em) rotateX(12deg); */
+        transform: perspective(2em) rotateX(12deg);
+    }
+}
 
 /* --------- - --------- - --------- */
 /* Media queries for responsiveness*/
