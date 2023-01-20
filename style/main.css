@@ -371,10 +371,11 @@ section p {
 
 .features article {
     display: block;
+    width: var(--w-full);
 }
 
 .features h2, h3 {
-    width: var(--w-half);
+    width: var(--w-full);
     padding: 0;
     display: block;
     color: var(--c-primary);
@@ -400,11 +401,12 @@ section p {
     padding: var(--em-small);
     color: var(--c-secundary);
     border-radius: var(--em-micro);
-
 }
 
-iframe {
+.map iframe {
     width: var(--w-full);
+    min-height: var(--w-quarter);
+    border-radius: var(--em-small);
 }
 
 .comparable {
@@ -704,17 +706,30 @@ dialog::backdrop {
     }
 
     .features {
-        width: var(--w-full);
-        display: blo;
+        width: 90vw;
+        display: flex;
         flex-wrap: wrap;
         padding: var(--em-default);
-        gap: var(--em-default);
+        gap: var(--em-small) var(--em-default);
+        justify-content: space-between;
+        margin: auto;
+        
     }
     
     .features article {
         width: 40vw;
         height: fit-content;
         display: block;
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+    }
+
+    .map iframe {
+        width: 87vw;
+        min-height: var(--w-half);
     }
 
 }
@@ -750,6 +765,10 @@ dialog::backdrop {
         width: 25em;
     }
 
+    .features article {
+        width: 40vw;
+    }
+
 }
 
 /* Large screen */
@@ -783,6 +802,10 @@ dialog::backdrop {
       
     .product-hero-title {
         width: var(--w-half);
+    }
+
+    .features article {
+        width: 40vw;
     }
 }
 
