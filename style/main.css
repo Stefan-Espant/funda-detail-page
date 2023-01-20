@@ -167,6 +167,10 @@ hr {
     margin: var(--em-micro) 0;
 }
 
+.show {
+    display: block;
+}
+
 /* sections */
 
 section {
@@ -247,27 +251,36 @@ section p {
     border-radius: var(--em-small);
 }
 
-
-
 .hero-impression {
     display: flex;
     animation: fade-in var(--a-medium) 2.5s forwards;
     opacity: 0;
 }
 
-.hero-impression a {
+.hero-impression button {
     color: var(--c-default);
-}
-
-.hero-impression a {
+    background-color: inherit;
+    border-radius: var(--em-micro);
+    gap: var(--em-micro);
     display: flex;
     align-items: center;
-    gap: var(--em-micro);
+    box-shadow: none;
+}
+
+.hero-impression button:hover {
+    background-color: var(--c-primary-50);
 }
 
 .hero-impression svg {
     padding: var(--em-micro);
+    fill: var(--c-default);
 }
+
+.hero-impression button:hover svg {
+    fill: var(--c-default);
+}
+
+
 
 
 .images {
@@ -464,6 +477,13 @@ footer a {
     color: var(--c-secundary-50);
     padding-bottom: var(--em-small);
 }
+
+/* dialog */
+dialog::backdrop {
+    	background: #0f06;
+    	backdrop-filter: blur(5px);
+}
+
 
 /* --------- - --------- - --------- */
 /* Keyframes */
