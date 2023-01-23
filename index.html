@@ -12,7 +12,6 @@
     </title>
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <link rel="stylesheet" href="./style/main.css" />
-    <script src="/script/index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -79,8 +78,8 @@
                 <!-- Titel mag maximaal 12 tekens zijn -->
                 <h1>Vechtstroom 20</h1>
                 <h2><small>2721 DG Zoetermeer</small></h2>
-                <hr />
-                <h2 class="price">€ 700.000 <sup>k.k.</sup></h2>
+                <!-- <hr /> -->
+                <h3 class="price">€ 700.000 <sup>k.k.</sup></h3>
             </div>
             <div class="hero-map">
                 <a href="https://goo.gl/maps/HRCJxxRg6JjwgBrb7">
@@ -116,8 +115,8 @@
             <div class="hero-impression">
                 <ul>
                     <li>
-                        <button id="showImages">
-                            <svg width="24" height="" viewBox="0 0 34 30" fill="none"
+                        <button id="show-images">
+                            <svg width="24" height="" viewBox="0 0 34 30" fill=""
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M0 3C0 1.34315 1.34315 0 3 0H27C28.6569 0 30 1.34315 30 3V4H31C32.6569 4 34 5.34315 34 7V27C34 28.6569 32.6569 30 31 30H7C5.34315 30 4 28.6569 4 27V26H3C1.34315 26 0 24.6569 0 23V3ZM4 24V7C4 5.34314 5.34315 4 7 4H28V3C28 2.44772 27.5523 2 27 2H3C2.44772 2 2 2.44772 2 3V23C2 23.5523 2.44772 24 3 24H4Z"
@@ -161,6 +160,9 @@
                 </ul>
             </div>
         </section>
+        <dialog open="">
+            <form method="dialog">Test</form>
+        </dialog>
         <section class="images">
             <img src="./assets/090_2160.jpg" alt="Foto woonkamer met zicht op de achtertuin" loading="lazy" />
             <img src="./assets/092_2160.jpg" alt="Foto woonkamer met zicht op de eetruimte" loading="lazy" />
@@ -198,6 +200,9 @@
             </ul>
         </section>
         <section class="summary">
+            <article>
+                <h2>Over dit perceel</h2>
+            </article>
             <article>
                 <h3>Omschrijving</h3>
                 <p>
@@ -472,12 +477,12 @@
                 width="" height="" style="border: 0" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section class="comparable">
+        <!-- <section class="comparable">
             <h2>Vergelijkbaar in de buurt</h2>
             <ul>
                 <li></li>
             </ul>
-        </section>
+        </section> -->
         <section class="actions">
             <ul>
                 <li><a href="">Bewaren</a></li>
@@ -487,6 +492,50 @@
                 <li><a href="">Meld een fout</a></li>
             </ul>
         </section>
+
+        <!-- Hier benenden verschijnen alle dialogs -->
+        <button class="open-dialog-button" type="button">Open Dialog</button>
+        <dialog class="dialog">
+          <div class="dialog-header">
+            <h2>Dialog Box</h2>
+            <button class="close-button" type="button">X</button>
+          </div>
+          <div class="dialog-content">
+            <p>This is a sample dialog box.</p>
+          </div>
+          <div class="dialog-footer">
+            <button class="cancel-button" type="button">Cancel</button>
+            <button class="confirm-button" type="button">Confirm</button>
+          </div>
+        </dialog>
+        
+        <!-- Test carousel -->
+
+          <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel">
+                    <img class="carousel-item" src="/assets/088_1080x720.jpg" alt="image1">
+                    <img class="carousel-item" src="/assets/090_1080x720.jpg" alt="image2">
+                    <img class="carousel-item" src="/assets/097_2160.jpg" alt="image3">
+                  </div>
+            </div>
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="/assets/088_1080x720.jpg" alt="image1">
+                <img class="thumbnail" src="/assets/090_1080x720.jpg" alt="image2">
+                <img class="thumbnail" src="/assets/097_2160.jpg" alt="image3">
+              </div>
+            <button class="prev-button" type="button">&lt;</button>
+            <button class="next-button" type="button">&gt;</button>
+            <div class="indicator-container">
+              <span class="indicator" data-index="0"></span>
+              <span class="indicator" data-index="1"></span>
+              <span class="indicator" data-index="2"></span>
+            </div>
+          </div>
+          
+          
+          
+        <br><br><br><br><br><br>
     </main>
     <footer>
         <section>
@@ -561,24 +610,6 @@
             </article>
         </section>
     </footer>
-    <dialog id="dialogImages">
-        <form method="dialog">
-            <p>
-              <label>Favorite animal:
-                <select>
-                  <option value="default">Choose…</option>
-                  <option>Brine shrimp</option>
-                  <option>Red panda</option>
-                  <option>Spider monkey</option>
-                </select>
-              </label>
-            </p>
-            <div>
-              <button value="cancel">Cancel</button>
-              <button id="confirmBtn" value="default">Confirm</button>
-            </div>
-          </form>
-    </dialog>
-    <output></output>
+    <script src="/script/index.js" type="text/javascript"></script>
 </body>
 </html>
