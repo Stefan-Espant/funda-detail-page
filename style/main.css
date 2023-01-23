@@ -127,7 +127,7 @@ button {
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: var(--em-micro);
+    border-radius: var(--em-small);
     background-color: var(--c-default);
     padding: var(--em-small);
     transition: var(--a-default) ease-in-out;
@@ -147,11 +147,21 @@ button:hover svg {
 }
 
 a {
+    width: fit-content;
     display: block;
     padding: var(--em-small);
     text-decoration: none;
     transition: var(--a-default);
     border: 0.2em solid none;
+}
+
+a:hover {
+    border-radius: var(--em-small);
+}
+
+a:focus {
+    padding: var(--em-small);
+    border-radius: var(--em-small);
 }
 
 a:focus-visible {
@@ -218,6 +228,7 @@ section p {
     transform: translateY(-5em);
     animation: fade-left var(--a-x-large) var(--a-start) ease-in-out forwards;
     opacity: 0;
+    z-index: 5;
 }
 
 .product-hero h1, h2, h3 {
@@ -270,7 +281,7 @@ section p {
 .hero-impression button {
     color: var(--c-default);
     background-color: inherit;
-    border-radius: var(--em-micro);
+    border-radius: var(--em-small);
     gap: var(--em-micro);
     display: flex;
     align-items: center;
@@ -291,7 +302,7 @@ section p {
 }
 
 .images {
-    width: 20em;
+    width: 100vw;
     padding: 5.5em 0 1em;
     display: flex;
     flex: 0 0 100%;
@@ -314,12 +325,62 @@ section p {
 }
 
 .images img {
-    width: 16em;
+    width: 20em;
     display: inline-flex;
     flex: none;
     scroll-snap-align: center;
     border-radius: var(--em-micro);
 }
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 1s;
+  }
+  
+  .carousel-item {
+    width: 33%;
+    height: 100%;
+  }
+
+  .carousel img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .thumbnail-container img {
+    width: 80px;
+    height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
+  
+  .thumbnail.active {
+    border: 2px solid #000;
+  }
+
+  .prev-button {
+    transform: translateY(-16em);
+  }
+
+  .next-button {
+    transform: translateY(-16em);
+  }
+  
 
 .info {
     width: fit-content;
@@ -386,6 +447,21 @@ section p {
     width: var(--w-full);
 }
 
+.features a {
+    color: var(--c-secundary);
+    margin: var(--em-small);
+    padding: var(--em-small);
+}
+.features a:hover {
+    background-color: var(--c-secundary-75);
+    color: var(--c-default);
+}
+
+.features a:focus {
+    border: var(--em-micro) solid var(--c-secundary);
+    padding: var(--em-small);
+}
+
 .features h2, h3 {
     width: var(--w-full);
     padding: 0;
@@ -415,6 +491,16 @@ section p {
     border-radius: var(--em-micro);
 }
 
+.map {
+    display: block;
+}
+
+.map h2 {
+    max-width: 30em;
+    color: var(--c-primary);
+    padding: var(--em-small)
+}
+
 .map iframe {
     width: var(--w-full);
     min-height: var(--w-quarter);
@@ -427,6 +513,17 @@ section p {
 
 .actions {
     padding: var(--em-default);
+    background-color: #d4e9ff;
+    margin-top: 1em;
+}
+
+.actions ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actions a{
+    color: var(--c-secundary);
 }
 
 li {
@@ -444,18 +541,6 @@ li {
 h1, h2, h3, h4, h5, h6, p {
     color: var(--c-default);
     max-width: 30em;
-}
-
-h1 {
-    font-size: var(--em-medium);
-}
-
-h2 {
-
-}
-
-h3 {
-
 }
 
 p {
@@ -514,8 +599,8 @@ footer h3 {
 /* dialog */
 
 dialog::backdrop {
-    	background: #0f06;
-    	backdrop-filter: blur(5px);
+    	background-color: #0008;
+    	backdrop-filter: blur(var(--em-));
 }
 
 
@@ -679,7 +764,6 @@ dialog::backdrop {
     }
 
     .images {
-        width: 25em;
         padding: 12.5em 0 1em;
         display: flex;
         flex-flow: row nowrap;
@@ -918,57 +1002,5 @@ dialog.dialog {
   .cancel-button {
     background-color: #f44336;
   }
-  
-  /* carousel by openai */
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 40em;
-    overflow: hidden;
-  }
-  
-  .carousel {
-    width: 300%;
-    height: 100%;
-    display: flex;
-    transition: transform 1s;
-  }
-  
-  .carousel-item {
-    width: 33%;
-    height: 100%;
-  }
 
-  .carousel img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
-  
-  .thumbnail-container {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .thumbnail {
-    width: 80px;
-    height: 60px;
-    margin-right: 10px;
-    cursor: pointer;
-    border: 2px solid #fff;
-  }
-  
-  .thumbnail.active {
-    border: 2px solid #000;
-  }
-
-  .prev-button {
-    transform: translateY(-16em);
-  }
-
-  .next-button {
-    transform: translateY(-16em);
-  }
   

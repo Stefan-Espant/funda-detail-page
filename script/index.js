@@ -30,17 +30,20 @@
 // dialog for ground plan images
 
 // test openai
-const openDialogButton = document.querySelector(".open-dialog-button");
+const openDialogFotos = document.querySelector(".open-dialog-fotos");
 const dialog = document.querySelector(".dialog");
-const closeDialogButton = document.querySelector(".close-button");
+const closeDialogFotos = document.querySelector(".close-button");
 
-openDialogButton.addEventListener("click", function() {
+openDialogFotos.addEventListener("click", function() {
   dialog.showModal();
 });
 
-closeDialogButton.addEventListener("click", function() {
+closeDialogFotos.addEventListener("click", function() {
   dialog.close();
 });
+
+
+
 
 const carousel = document.querySelector(".carousel");
 const prevButton = document.querySelector(".prev-button");
@@ -56,7 +59,7 @@ prevButton.addEventListener("click", function() {
   if (currentIndex < 0) {
     currentIndex = totalItems - 1;
   }
-  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  carousel.style.transform = `translateX(-${currentIndex * 20}em)`;
   updateThumbnail();
 });
 
@@ -65,7 +68,7 @@ nextButton.addEventListener("click", function() {
     if (currentIndex >= totalItems) {
       currentIndex = 0;
     }
-    carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    carousel.style.transform = `translateX(-${currentIndex * 20}em)`;
     updateThumbnail();
   });
   
