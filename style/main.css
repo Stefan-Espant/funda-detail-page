@@ -303,7 +303,7 @@ section p {
 
 .images {
     width: 100vw;
-    padding: 5.5em 0 1em;
+    padding: 15em 0 1em;
     display: flex;
     flex: 0 0 100%;
     overflow: auto;
@@ -675,6 +675,7 @@ dialog::backdrop {
     .product-hero {
         width: 19em;
         display: flex;
+        flex-wrap: wrap;
         padding: var(--em-default);
         padding-right: var(--em-default);
         padding-right: var(--em-medium);
@@ -689,14 +690,20 @@ dialog::backdrop {
     }
 
     .hero-map {
-        display: none;
-        width: fit-content;
+        display: block;
+        width: var(--w-full);
         height: fit-content;
         padding: 0;
     }
 
-    .hero-impression {
-        display: none;
+    .hero-impression ul {
+        width: var(--w-full);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-impression li {
+        margin: var(--em-micro) var(--em-small);
     }
 
     .hero-impression a:hover {
