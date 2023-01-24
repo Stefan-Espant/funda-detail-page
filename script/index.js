@@ -1,3 +1,14 @@
+// Button for increasing contrast
+const increaseContrast = document.querySelector('body')
+const contrastButton = document.querySelector('#contrast-increaser')
+
+contrastButton.addEventListener('click', () => {
+    increaseContrast.classList.toggle('increase-contrast');
+})
+
+
+
+
 // // dialog for video's
 // const openDialogVideo = document.querySelector(".open-dialog-video");
 // const dialogVideo = document.querySelector("dialog-video");

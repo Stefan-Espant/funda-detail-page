@@ -221,6 +221,23 @@ section p {
   width: var(--w-full);
 }
 
+.hero #contrast-increaser {
+    top: 1em;
+    right: 2em;
+    position: absolute;
+}
+
+.hero #contrast-increaser svg {
+    fill: var(--c-primary);
+}
+
+.hero #contrast-increaser:hover svg, #contrast-increaser:focus svg, #contrast-increaser:active svg{
+    fill: var(--c-secundary);
+    transform: rotateZ(180deg);
+}
+
+
+
 .hero-save-n-share {
   display: flex;
   position: absolute;
@@ -238,7 +255,6 @@ section p {
 .hero-save-n-share button:focus {
     outline: var(--em-micro) solid var(--c-primary);
 }   
-
 
 .product-hero {
   width: fit-content;
@@ -524,7 +540,7 @@ h3 {
 .features a {
   color: var(--c-secundary);
   margin: var(--em-small);
-  padding: var(--em-small);
+  padding: var(--em-micro);
 }
 
 .features a:hover {
@@ -597,7 +613,7 @@ h3 {
 
 .actions {
   padding: var(--em-default);
-  background-color: #d4e9ff;
+  background-color: var(--c-secundary-50);
   margin-top: 1em;
 }
 
@@ -779,6 +795,20 @@ dialog {
     color: var(--c-primary);
   }
 
+/* --------- - --------- - --------- */
+/* Increase contrast */
+/* --------- - --------- - --------- */
+
+/* Increase contrast */
+.increase-contrast {
+    --c-primary: #422B00;
+    --c-primary-50: #754C00;
+    --c-secundary: #003858;
+    --c-secundary-100: #003858;
+    --c-secundary-75: #004770;
+    --c-secundary-0: #e7f0fa ;
+    transition: var(--a-default) ease-in-out;
+  }
   
 
 /* --------- - --------- - --------- */
