@@ -569,6 +569,11 @@ h3 {
   border-radius: var(--em-micro);
 }
 
+.features dd a{
+    display: inline;
+    margin: var(--em-default);
+}
+
 .map {
   display: block;
 }
