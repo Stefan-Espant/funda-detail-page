@@ -1,49 +1,44 @@
-// const productHero = document.querySelector('product-hero')
-
-// productHero.addEventListener('mousemove', () => {
-
-// } )
-
-// const showVideo = document.querySelector('.showVideo')
-// const dialogVideo = document.querySelector('#dialogVideo')
-
-// const show360 = document.querySelector('.show360')
-// const dialog360 = document.querySelector('#dialog360')
-
-// const showPlan = document.querySelector('.showPlan')
-// const dialogPlan = document.querySelector('#dialogPlan')
-
-// dialog for images
-// const showImage = document.querySelector('#show-images')
-// const dialogImage = document.querySelector('#dialog-images')
-
-// showImage.addEventListener('click', function() {
-//     window.dialog.show()
-// })
-
 // dialog for video's
+const openDialogVideo = document.querySelector(".open-dialog-video");
+const dialogVideo = document.querySelector("dialog-video");
+const closeDialogVideo = document.querySelector(".close-button");
 
+openDialogVideo.addEventListener("click", function() {
+  dialogVideo.showModal();
+});
+
+closeDialogVideo.addEventListener("click", function() {
+  dialog.close();
+});
 
 // dialog for 360 images
+const openDialog360Img = document.querySelector(".open-dialog-360");
+const dialog360 = document.querySelector("dialog-360");
+const closeDialog360Img = document.querySelector(".close-button");
 
-
-// dialog for ground plan images
-
-// test openai
-const openDialogFotos = document.querySelector(".open-dialog-fotos");
-const dialog = document.querySelector(".dialog");
-const closeDialogFotos = document.querySelector(".close-button");
-
-openDialogFotos.addEventListener("click", function() {
+openDialog360Img.addEventListener("click", function() {
   dialog.showModal();
 });
 
-closeDialogFotos.addEventListener("click", function() {
+closeDialog360Img.addEventListener("click", function() {
+  dialog.close();
+});
+
+// dialog for ground plan images
+const openDialogGroundPlan = document.querySelector(".open-dialog-ground-plan");
+const dialogGroundPlan = document.querySelector("dialog-ground-plan");
+const closeDialogGroundPlan = document.querySelector(".close-button");
+
+openDialogVideo.addEventListener("click", function() {
+  dialog.showModal();
+});
+
+closeDialogVideo.addEventListener("click", function() {
   dialog.close();
 });
 
 
-
+// Settings for the image carousel with thumbnails
 
 const carousel = document.querySelector(".carousel");
 const prevButton = document.querySelector(".prev-button");
@@ -59,7 +54,7 @@ prevButton.addEventListener("click", function() {
   if (currentIndex < 0) {
     currentIndex = totalItems - 1;
   }
-  carousel.style.transform = `translateX(-${currentIndex * 20}em)`;
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
   updateThumbnail();
 });
 
@@ -68,7 +63,7 @@ nextButton.addEventListener("click", function() {
     if (currentIndex >= totalItems) {
       currentIndex = 0;
     }
-    carousel.style.transform = `translateX(-${currentIndex * 20}em)`;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
     updateThumbnail();
   });
   
@@ -82,8 +77,7 @@ nextButton.addEventListener("click", function() {
   thumbnails.forEach(function(thumbnail, index) {
     thumbnail.addEventListener("click", function() {
       currentIndex = index;
-      carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
       updateThumbnail();
     });
   });
-  
