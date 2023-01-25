@@ -35,8 +35,8 @@ De pagina is opgedeeld in een reeks hoofdelementen: `header`, `main` & `footer`.
 ### javascript
 
 ## Bronnen
-
-
+[12 principes of animation according to Disney](https://www.interaction-design.org/literature/article/ui-animation-how-to-apply-disney-s-12-principles-of-animation-to-ui-design?utm_campaign=evergreen&utm_source=linkedin&utm_medium=post&utm_content=article_post)
+[SVG optimizer](https://jakearchibald.github.io/svgomg/)
 
 ## Licentie
 
