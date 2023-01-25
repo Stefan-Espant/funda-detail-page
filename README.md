@@ -6,6 +6,7 @@
   * [Beschrijving](#beschrijving)
   * [Opdrachtgever](#opdrachtgever)
   * [Kenmerken](#kenmerken)
+  * [Gebruik](#gebruik)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
@@ -60,6 +61,9 @@ De Javascript heb ik gecodeerd met de methode: selecteren `document.querySelecto
 Tot slot heb ik een eenvoudige instelling gemaakt die het kleurcontrast vergroot.
 
 https://github.com/Stefan-Espant/funda-detail-page/blob/df0a971ab9279f56e1e032ddd6590423ebd8c0d5/script/index.js#L1-L9
+
+## Gebruik 
+N.V.T.
 
 ## Bronnen
 [12 principes of animation according to Disney](https://www.interaction-design.org/literature/article/ui-animation-how-to-apply-disney-s-12-principles-of-animation-to-ui-design?utm_campaign=evergreen&utm_source=linkedin&utm_medium=post&utm_content=article_post)
