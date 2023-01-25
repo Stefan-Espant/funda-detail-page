@@ -37,6 +37,8 @@ Voor dit project heb ik de volgende programmeertalen gebruikt:
 De pagina is opgedeeld in een reeks hoofdelementen: `header`, `main` & `footer`.
 Binnen deze elementen word er gebruik gemaakt van de indeling `section` en daar in `article` om hiërachrie consistent te houden.
 
+https://github.com/Stefan-Espant/funda-detail-page/blob/df0a971ab9279f56e1e032ddd6590423ebd8c0d5/index.html#L55-L63
+
 ### css
 In de css heb ik ook een indeling op gemaakt. De volgorde in mijn code bestaat uit een aantal `custom properties` om herhaling van waardes in mijn code te voorkomen. Gevolgd door een reeks `standaard` instellingen, een sectie `keyframes` die de animaties verzorgen en een sectie `media-queries` die de `standaard` instellingen manipuleren om op ieder scherm visueel aantrekkelijk te houden. Wat betreft naamgeving ben ik daar zuinig mee om gegaan en heb ik veel code genest. 
 
@@ -53,6 +55,8 @@ In Javascript heb ik een sectie met instellingen die de `dialog` mogelijk maken.
 De Javascript heb ik gecodeerd met de methode: selecteren `document.querySelector()`, actie herkennen `addEventListener()` en uitvoeren `classList()`. 
 
 Tot slot heb ik een eenvoudige instelling gemaakt die het kleurcontrast vergroot.
+
+https://github.com/Stefan-Espant/funda-detail-page/blob/df0a971ab9279f56e1e032ddd6590423ebd8c0d5/script/index.js#L1-L9
 
 ## Bronnen
 [12 principes of animation according to Disney](https://www.interaction-design.org/literature/article/ui-animation-how-to-apply-disney-s-12-principles-of-animation-to-ui-design?utm_campaign=evergreen&utm_source=linkedin&utm_medium=post&utm_content=article_post)
