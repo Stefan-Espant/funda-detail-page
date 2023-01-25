@@ -51,6 +51,8 @@ Tot slot heb ik een eenvoudige instelling gemaakt die het kleurcontrast vergroot
 
 [SVG optimizer](https://jakearchibald.github.io/svgomg/)
 
+[Voorbeeldpagina](https://www.funda.nl/koop/zoetermeer/huis-42086186-vechtstroom-20/)
+
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
