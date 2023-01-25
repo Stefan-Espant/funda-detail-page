@@ -20,6 +20,20 @@ Dit project is ee
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
+Voor dit project heb ik de volgende programmeertalen gebruikt:
+* [HTML](#html)
+* [CSS](#css)
+* [Javascript](#javascript)
+
+### html
+De pagina is opgedeeld in een reeks hoofdelementen: `header`, `main` & `footer`.
+
+
+### css
+
+
+### javascript
+
 ## Bronnen
 
 
