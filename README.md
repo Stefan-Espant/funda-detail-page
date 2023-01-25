@@ -1,6 +1,7 @@
 # Ontwerp en ontwikkel een <br>hernieuwde product page voor funda 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-<img width="1080" alt="Schermafbeelding 2023-01-25 om 11 39 01" src="https://user-images.githubusercontent.com/89298385/214543219-6be175f3-c014-430d-ba18-a68159fafa0a.png">
+<img width="1080" alt="Mock-up funda" src="https://user-images.githubusercontent.com/89298385/214584957-63a36cc6-9e0c-4eb0-8bf4-02b3159230e9.png">
+
 
 ## Index
   * [Beschrijving](#beschrijving)
