@@ -3,6 +3,7 @@
 # Rebuild Product page funda 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 <img width="1080" alt="Schermafbeelding 2023-01-18 om 11 52 06" src="https://user-images.githubusercontent.com/89298385/213870236-7b9db928-2b56-47a6-99f5-04fd0bc801e6.png">
+
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 
