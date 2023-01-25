@@ -1,4 +1,5 @@
 // Button for increasing contrast
+
 const increaseContrast = document.querySelector('body')
 const contrastButton = document.querySelector('#contrast-increaser')
 
@@ -6,48 +7,33 @@ contrastButton.addEventListener('click', () => {
     increaseContrast.classList.toggle('increase-contrast');
 })
 
+// dialog for video's
 
+const openDialogVideo = document.querySelector(".open-dialog-video");
+const dialogVideo = document.querySelector(".dialog-video");
+const closeDialogVideo = document.querySelector("#close-button-video");
 
+openDialogVideo.addEventListener("click", function() {
+  dialogVideo.showModal();
+});
 
-// // dialog for video's
-// const openDialogVideo = document.querySelector(".open-dialog-video");
-// const dialogVideo = document.querySelector("dialog-video");
-// const closeDialogVideo = document.querySelector(".close-button");
+closeDialogVideo.addEventListener("click", function() {
+  dialogVideo.close();
+});
 
-// openDialogVideo.addEventListener("click", function() {
-//   dialogVideo.showModal();
-// });
+// dialog for ground plan images
 
-// closeDialogVideo.addEventListener("click", function() {
-//   dialog.close();
-// });
+const openDialogGroundPlan = document.querySelector(".open-dialog-ground-plan");
+const dialogGroundPlan = document.querySelector(".dialog-ground-plan");
+const closeDialogGroundPlan = document.querySelector("#close-button-ground-plan");
 
-// // dialog for 360 images
-// const openDialog360Img = document.querySelector(".open-dialog-360");
-// const dialog360 = document.querySelector("dialog-360");
-// const closeDialog360Img = document.querySelector(".close-button");
+openDialogGroundPlan.addEventListener("click", function() {
+    dialogGroundPlan.showModal();
+});
 
-// openDialog360Img.addEventListener("click", function() {
-//   dialog.showModal();
-// });
-
-// closeDialog360Img.addEventListener("click", function() {
-//   dialog.close();
-// });
-
-// // dialog for ground plan images
-// const openDialogGroundPlan = document.querySelector(".open-dialog-ground-plan");
-// const dialogGroundPlan = document.querySelector("dialog-ground-plan");
-// const closeDialogGroundPlan = document.querySelector(".close-button");
-
-// openDialogVideo.addEventListener("click", function() {
-//   dialog.showModal();
-// });
-
-// closeDialogVideo.addEventListener("click", function() {
-//   dialog.close();
-// });
-
+closeDialogGroundPlan.addEventListener("click", function() {
+    dialogGroundPlan.close();
+});
 
 // Settings for the image carousel with thumbnails
 

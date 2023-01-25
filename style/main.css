@@ -208,6 +208,7 @@ section h3 {
 
 section p {
   color: var(--c-invert);
+  padding-bottom: var(--em-default);
 }
 
 .hero {
@@ -309,6 +310,7 @@ h3 {
 .hero-map a svg {
   mix-blend-mode: normal;
   transition: var(--a-default) ease-in-out;
+  border-radius: var(--em-micro);
 }
 
 .hero-map a:hover svg {
@@ -363,7 +365,7 @@ h3 {
 
 .images {
   width: 100vw;
-  padding: 21em 0 0em;
+  padding: 24em 0 0em;
   display: flex;
   position: relative;
   flex: 0 0 100%;
@@ -502,13 +504,11 @@ h3 {
   padding: var(--em-medium);
 }
 
-.summary article:nth-child(1) {
-  width: var(--w-full);
-  padding: var(--em-default) 3em;
-}
-
 .summary h2,
 h3 {
+  width: var(--w-full);
+  padding: 0;
+  display: block;
   color: var(--c-primary);
 }
 
@@ -775,10 +775,35 @@ dialog {
     margin: 0;
   }
 
+  dialog img {
+    width: var(--w-full);
+  }
+
   dialog video {
     width: 100%;
     aspect-ratio: 16/9;
     border-radius: var(--em-small) ;
+  }
+
+    dialog .dialog-content {
+        width: 100%;
+        height: fit-content;
+        padding: var(--em-medium);
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }   
+
+  dialog .ground-plan {
+    display: flex;
+    width: 400%;
+    gap: var(--em-default)
+  }
+
+  dialog .ground-plan img {
+    border: 0.1em solid #eee;
+    border-radius: var(--em-micro);
+    scroll-snap-align: center;
   }
   
   dialog .close-button {
@@ -944,6 +969,10 @@ dialog {
     border-radius: var(--em-small);
   }
 
+  dialog .ground-plan img {
+    aspect-ratio: 1/1;
+  }
+
   .map {
     height: var(--w-full);
   }
@@ -967,6 +996,12 @@ dialog {
     display: flex;
     width: 30vw;
   }
+
+  .summary {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
 
   /* Small screen */
   @media (min-width: 30em) {
@@ -997,6 +1032,10 @@ dialog {
       flex-wrap: wrap;
       padding: var(--em-small) 0;
     }
+
+    dialog .ground-plan img {
+        aspect-ratio: 4/3;
+      }
 
     .images {
       width: inherit;
@@ -1032,6 +1071,8 @@ dialog {
       flex: none;
       scroll-snap-align: center;
     }
+
+
 
     .map {
       height: var(--w-full);
@@ -1112,6 +1153,8 @@ dialog {
     }
 
     .summary {
+        width: var(--w-full);
+    margin: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
@@ -1173,6 +1216,10 @@ dialog {
       transform: translateY(-12em);
     }
 
+    dialog .ground-plan img {
+        aspect-ratio: 16/9;
+      }
+
     .images {
       padding: 6em 0 var(--em-default);
     }
@@ -1191,8 +1238,13 @@ dialog {
       top: 40%;
     }
 
+    .summary {
+        width: var(--w-halffull);
+        margin: 0 auto;
+    }
+
     .summary article {
-      width: 25em;
+      min-width: 25em;
     }
 
     .features article {
