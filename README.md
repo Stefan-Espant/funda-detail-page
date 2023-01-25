@@ -40,6 +40,14 @@ Binnen deze elementen word er gebruik gemaakt van de indeling `section` en daar 
 ### css
 In de css heb ik ook een indeling op gemaakt. De volgorde in mijn code bestaat uit een aantal `custom properties` om herhaling van waardes in mijn code te voorkomen. Gevolgd door een reeks `standaard` instellingen, een sectie `keyframes` die de animaties verzorgen en een sectie `media-queries` die de `standaard` instellingen manipuleren om op ieder scherm visueel aantrekkelijk te houden. Wat betreft naamgeving ben ik daar zuinig mee om gegaan en heb ik veel code genest. 
 
+https://github.com/Stefan-Espant/funda-detail-page/blob/e9385f7d1539a1b8aa6204391d1823a523ec1af8/main.css#L1-L55
+
+https://github.com/Stefan-Espant/funda-detail-page/blob/e9385f7d1539a1b8aa6204391d1823a523ec1af8/main.css#L833-L846
+
+https://github.com/Stefan-Espant/funda-detail-page/blob/e9385f7d1539a1b8aa6204391d1823a523ec1af8/main.css#L849-L928
+
+https://github.com/Stefan-Espant/funda-detail-page/blob/e9385f7d1539a1b8aa6204391d1823a523ec1af8/main.css#L929-L931
+
 ### javascript
 In Javascript heb ik een sectie met instellingen die de `dialog` mogelijk maken. Daaronder een sectie die de carousel met thumbnails verzorgen.
 De Javascript heb ik gecodeerd met de methode: selecteren `document.querySelector()`, actie herkennen `addEventListener()` en uitvoeren `classList()`. 
