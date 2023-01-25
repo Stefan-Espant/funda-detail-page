@@ -1,6 +1,4 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
-# Rebuild Product page funda 
+# Ontwerp en ontwikkel een hernieuwde product page voor funda 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 <img width="1080" alt="Schermafbeelding 2023-01-18 om 11 52 06" src="https://user-images.githubusercontent.com/89298385/213870236-7b9db928-2b56-47a6-99f5-04fd0bc801e6.png">
 
