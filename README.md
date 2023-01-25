@@ -33,6 +33,9 @@ Voor dit project heb ik de volgende programmeertalen gebruikt:
 * [CSS](#css)
 * [Javascript](#javascript)
 
+Voor de CSS en Javascript heb ik veel gebruik gemaakt van comments om aan te geven wat bij welk html element hoort. 
+Deze twee talen zijn vaak complexer en moeten mede-ontwikkelaars context geven wat het inhoud.
+
 ### html
 De pagina is opgedeeld in een reeks hoofdelementen: `header`, `main` & `footer`.
 Binnen deze elementen word er gebruik gemaakt van de indeling `section` en daar in `article` om hiërachrie consistent te houden.
