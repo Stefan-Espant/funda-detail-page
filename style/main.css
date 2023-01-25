@@ -365,7 +365,7 @@ h3 {
 
 .images {
   width: 100vw;
-  padding: 24em 0 0em;
+  padding: 28em 0 0em;
   display: flex;
   position: relative;
   flex: 0 0 100%;
@@ -592,18 +592,20 @@ h3 {
 
 .map {
   display: block;
+  padding: var(--em-medium);
 }
 
 .map h2 {
   display: block;
   width: fit-content;
   color: var(--c-primary);
-  padding: var(--em-small);
+  margin-right: auto;
+  padding: var(--em-small) 0;
 }
 
 .map iframe {
   width: var(--w-full);
-  min-height: var(--w-quarter);
+    aspect-ratio: 1/1;
   border-radius: var(--em-small);
 }
 
@@ -660,6 +662,14 @@ h6,
 p {
   color: var(--c-default);
   max-width: 30em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: var(--em-medium);
 }
 
 p {
@@ -979,7 +989,6 @@ dialog {
 
   .map iframe {
     height: var(--w-full);
-    border-radius: 0;
   }
 }
 
@@ -1039,7 +1048,7 @@ dialog {
 
     .images {
       width: inherit;
-      padding: 22em 0 1em;
+      padding: 24em 0 1em;
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
@@ -1072,10 +1081,12 @@ dialog {
       scroll-snap-align: center;
     }
 
-
-
     .map {
-      height: var(--w-full);
+      height: auto;
+    }
+
+    .map iframe {
+        aspect-ratio: 4/3;
     }
 
     footer {
@@ -1133,7 +1144,7 @@ dialog {
     }
 
     .images {
-      padding: 12.5em 0 0;
+      padding: 15em 0 0;
     }
 
     .carousel-container {
@@ -1191,6 +1202,7 @@ dialog {
       width: 87vw;
       min-height: var(--w-half);
       border-radius: var(--em-small);
+      aspect-ratio: 16/9;
     }
   }
 
@@ -1201,7 +1213,7 @@ dialog {
     }
 
     .hero img {
-      width: var(--w-halffull);
+      width: 60vw;
       border-radius: var(--em-small);
     }
 
@@ -1210,10 +1222,10 @@ dialog {
     }
 
     .product-hero {
-      width: 60vw;
+      width: 50vw;
       border-radius: var(--em-small);
       right: var(--em-medium);
-      transform: translateY(-12em);
+      transform: translateY(-14em);
     }
 
     dialog .ground-plan img {
@@ -1221,7 +1233,7 @@ dialog {
       }
 
     .images {
-      padding: 6em 0 var(--em-default);
+      padding: 10em 0 var(--em-default);
     }
 
     .carousel-container {
@@ -1239,12 +1251,12 @@ dialog {
     }
 
     .summary {
-        width: var(--w-halffull);
+        width: 90vw;
         margin: 0 auto;
     }
 
     .summary article {
-      min-width: 25em;
+      width: 25em;
     }
 
     .features article {
@@ -1294,6 +1306,10 @@ dialog {
       aspect-ratio: 16/9;
     }
 
+    .summary {
+        width: 75vw;
+    }
+
     .features article {
       width: 40vw;
     }
@@ -1316,7 +1332,6 @@ dialog {
       border-radius: 100%;
       z-index: -1;
     }
-  }
 
   .actions::after {
     content: "";
