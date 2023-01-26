@@ -1146,7 +1146,7 @@ dialog .close-button:focus {
   }
 
   .thumbnail-container {
-    width: var(--w-halffull);
+    width: 90%;
     justify-content: flex-start;
   }
 
