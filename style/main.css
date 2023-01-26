@@ -422,6 +422,10 @@ h3 {
   object-fit: cover;
 }
 
+.thumbnail-container::-webkit-scrollbar {
+  display: none;
+}
+
 .thumbnail-container {
   width: var(--w-full);
   display: flex;
