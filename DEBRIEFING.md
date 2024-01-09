@@ -21,20 +21,33 @@ Op **25-01-2024** wordt de landingspagina opgeleverd.
 ## Randvoorwaarden / Technische Vereisten
 - **Privacy statement**
     - Het privacy statement moet linken naar de bestaande op de originele website.
+  
 
 - **Bestandsbeheer via Figma:**
     - Gebruik de aangeleverde Figma-bestanden als basis. Probeer het ontwerp zo precies mogelijk te volgen, maar maak kleine aanpassingen als dat de functionaliteit verbetert.
+  
 
 - **Doelgroep:**
     - Richt je op grotere klanten. Begrijp hun behoeften voor een effectieve landingspagina.
+  
 
 - **Een pagina:**
     - Het design bestaat uit een pagina hier moet niet van afgeweken worden.
+  
+
+- **Toegankelijkheid:**
+- Volgens een WCAG-specificatie. Geselecteerde WCAG-versie en niveau worden vermeld bij levering.
+
+
+- **Animatie:**
+- Paginascherm-animatie.
+- Knop-hover-animaties.
+
 
 - **Functionaliteiten:**
     - **Slider (Optioneel):** Overweeg een slider als de afbeeldingen afgezaagd worden bij een kleinere view.
-    - **Contactformulier:** Zorg voor een gebruiksvriendelijk contactformulier met foutmeldingen en markeer alleen wat optioneel is.
-    - **Responsive Design:** Zorg ervoor dat de landingspagina er goed uitziet op alle schermformaten.
+    - **Contactformulier:** Zorg voor een gebruiksvriendelijk contactformulier met foutmeldingen en markeer alleen wat optioneel is versturen hoeft niet te werken..
+    - **Responsive Design:** Zorg ervoor dat de landingspagina er goed uitziet op alle schermformaten, minimale viewport 320px.
 
 ## Gebruikers van het eindresultaat
 De gebruikers van het eindresultaat zijn voornamelijk grote bedrijven die een website willen laten maken.
