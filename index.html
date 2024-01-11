@@ -3,52 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>Informat</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+    <!--Gilroy font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilroy:wght@400&display=swap">
+
 </head>
 <body>
-<!--hero image-->
+<div class="pageWrapper">
+    <!--hero image-->
     <header class="hero">
-
+        <img src="assets/Post%20PreviewTest.jpg" alt="hero image">
     </header>
-<!--first block-->
-<section class="how">
+    <main>
+        <!--first block-->
+        <section class="howDoWeDo">
+            <img src="assets/Rectangle%2098.jpg" alt="hoe doen we dat">
+            <div class="howWeDoTextContainer">
+                <h2>Hoe doen we dat?</h2>
+                <ul>
+                    <li>Door snel ideeën te visualiseren en toetsen in de praktijk.</li>
+                    <li>En kansen te benutten op basis van waarden- en datagedreven aanpak.</li>
+                    <li>Met creatieve en analytische ontwerpers die de mens centraal stellen.</li>
+                    <li>Door snel ideeën te visualiseren en toetsen in de praktijk.</li>
+                    <li>In nauwe samenwerking met jouw team.</li>
+                </ul>
+                <button>Neem contact met ons op</button>
+            </div>
+        </section>
+        <!--second block-->
+        <section class="customerReviews">
+            <div class="customerReviewsContentContainer">
+                <h2>Wat vinden onze klanten</h2>
+                <p>“Ik ben niet alleen onder de indruk van het resultaat uit deze samenwerking, maar ook hoe Informaat
+                    gezorgd heeft dat onze medewerkers een nieuwe, klantgerichte denkwijze eifen hebben gemaakt. Dit is
+                    blijvend van waarde voor de organisatie</p>
+                <!--moeten later meerdere images in vandaar div-->
+                <div class="customerReviewsImageContainer">
+                    <img src="assets/logosInformaat.png" alt="bedrijfs logos">
+                </div>
+            </div>
+        </section>
 
-</section>
-<!--second block-->
-<section class="customerReviews">
+        <!--third block-->
+        <section class="askUs">
+            <div class="askUsTitleContainer">
+                <h2>Hoe doen we dat?</h2>
+                <p>Voorbeelden van vragen waar we in 2022 mee aan de slag gegaan zijn: hoe kunnen we...</p>
+                <ul>
+                <li>Door snel ideeën te visualiseren en toetsen in de praktijk.</li>
+                <li>En kansen te benutten op basis van waarden- en datagedreven aanpak.</li>
+                <li>Met creatieve en analytische ontwerpers die de mens centraal stellen.</li>
+                <li>Door snel ideeën te visualiseren en toetsen in de praktijk.</li>
+                <li>In nauwe samenwerking met jouw team.</li>
+            </ul>
+            </div>
+        </section>
 
-</section>
-<!--third block-->
-<section class="askUs">
+        <!--fourth block-->
+        <section class="whatDoYouGet">
+            <img src="assets/Rectangle%20104.jpg" alt="hoe doen we dat">
+            <div class="whatDoYouGetTextContainer">
+                <h2>Wat je van ons krijgt?</h2>
+                <ul>
+                    <li>Scherp beeld van je klant, hun waarden, behoefte en gedrag.</li>
+                    <li>Kansrijke en visueel uitgewerkte waardeproposities die inspelen op de klantbehoeften van overmorgen.</li>
+                    <li>Gevalideerd en passend bij je klant en je strategie.</li>
+                    <li>Focus voor de lange termijn, concrete verbeterideeën voor de korte termijn.</li>
+                    <li>Een goede Inkijk in hoee wij dat doen, zodat je eigen team het straks ook kan.</li>
+                    <li>Roadmap voor doorontwikkeling</li>
+                </ul>
+            </div>
+        </section>
+        <!--fifth block-->
+        <section class="ourApproach">
+            <h2>Onze aanpak?</h2>
+            <div class="ourApproachContentBlocks">
+            <h3>Waardengedreven</h3>
+                <img src="assets/Aanpak%20images.svg" alt="Waardengedreven">
+                <p>We achterhalen wat je klanten en organisatie écht belangrijk vinden. Dit vertalen we door in proposities</p>
+            </div>
+            <div class="ourApproachContentBlocks">
+            <h3>Waardengedreven</h3>
+                <img src="assets/Aanpak%20images-1.svg" alt="Datagedreven">
+                <p>We bedenken oplossingen die slim en etisch gebruik maken van data.</p>
+            </div>
+            <div class="ourApproachContentBlocks">
+            <h3>Positieve impact</h3>
+                <img src="assets/Aanpak%20images-2.svg" alt="">
+                <p>We dagen je team continu uit de beste keuzes te maken, voor je klanten, voor je bedrijf en voor de wereld.</p>
+            </div>
 
-</section>
-<!--fourth block-->
-<section class="whatDoYouGet">
+        </section>
+        <!--block six-->
+        <section class="exampleProject">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" id="slide1">
+                        <img src="assets/Rectangle%20105.jpg" alt="Slide 1">
 
-</section>
-<!--fifth block-->
-<section class="ourApproach">
+                    </div>
+                    <div class="slide" id="slide2">
+                        <img src="assets/Rectangle%20105-1.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide" id="slide3">
+                        <img src="assets/Rectangle%20133.jpg" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">Previous</button>
+                <button class="next" onclick="changeSlide(1)">Next</button>
+            </div>
+        </section>
+        <!--block seven-->
+        <section class="howWeStart">
 
-</section>
-<!--block six-->
-<section class="exampleProject">
+        </section>
+        <!--block eight-->
+        <section class="contact">
 
-</section>
-<!--block seven-->
-<section class="howWeStart">
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
 
-</section>
-<!--block eight-->
-<section class="contact">
-
-</section>
-<!--footer-->
-<footer>
-
-</footer>
-
-<main>
-
-
-</main>
+    </footer>
+</div>
 </body>
 </html>

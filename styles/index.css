@@ -1,0 +1,224 @@
+:root {
+    /*text sizes*/
+    --headTitleSize: 2em;
+    --titleSize: 1.5em;
+    --subTitleSize: 1.2em;
+    --textSize: 1em;
+    /*font properties*/
+    --textFont: 'Gilroy', sans-serif;
+    /*colors*/
+    --mainColor: #ABCDDB;
+    --secundaryColor: #ffff;
+    --tertairyColor: #D7E6EC;
+    --textColor: #000000;
+}
+
+/*text properties*/
+h1 h2 h3 p {
+    font-family: var(--textFont);
+    max-width: 60ch;
+}
+
+h1, h2, h3 {
+    line-height: 1.2; /* of line-height: 1.2em; */
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    font-size: var(--headTitleSize);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--titleSize);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--subTitleSize);
+    font-weight: bold;
+}
+
+p {
+    font-size: var(--textSize);
+    line-height: 1.5; /* of line-height: 1.5em; */
+    letter-spacing: 0.02em;
+}
+
+/*components (like buttons and li)*/
+
+
+
+/*wraps the page*/
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mainColor);
+
+}
+
+/*image settings*/
+header img {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*first block*/
+/*how do we do properties*/
+
+.howDoWeDo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.howWeDoTextContainer {
+    background-color: var(--secundaryColor);
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+
+}
+
+.howWeDoTextContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6em; /* Pas de afstand van de afschuining aan in em */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6em 36em 0; /* Pas de grootte van de afschuining aan in em */
+    border-color: transparent var(--secundaryColor) transparent transparent;
+}
+
+/*second block*/
+/**/
+.customerReviews {
+    background-color: var(--tertairyColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.customerReviewsContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Voeg deze regel toe om de inhoud in het midden te centreren */
+    margin: 4em;
+}
+
+.customerReviewsImageContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.customerReviewsImageContainer img {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+}
+
+/*third block*/
+.askUsTitleContainer {
+    margin: 1em 4em 6em;
+}
+
+.askUsTitleContainer ul {
+    margin-top: 4em;
+}
+
+/*fourth block*/
+.whatDoYouGet {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.whatDoYouGetTextContainer {
+    background-color: var(--secundaryColor);
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+
+}
+
+.whatDoYouGetTextContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6em; /* Pas de afstand van de afschuining aan in em */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6em 45em 0; /* Pas de grootte van de afschuining aan in em */
+    border-color: transparent var(--secundaryColor) transparent transparent;
+}
+
+.ourApproach {
+    background-color: var(--tertairyColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ourApproachContentBlocks {
+    text-align: center;
+    margin: 4em;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*fith block*/
+
+
+/*slider*/
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.prev .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+    background-color: pink;
+}
+
+.next {
+    right: 10px;
+    background-color: pink;
+}
+
+
+
