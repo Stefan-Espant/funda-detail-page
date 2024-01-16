@@ -47,7 +47,38 @@ p {
 
 /*components (like buttons and li)*/
 
+ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+.listItems::before {
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 1em 0 1em 1em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -2em;
+    top: 2.5em;
+    position: relative;
+}
 
+button {
+    background-color: var(--secundaryColor);
+    border: solid 1px black;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+a:visited {
+    color: var(--textColor);
+}
 
 /*wraps the page*/
 .pageWrapper {
@@ -81,8 +112,16 @@ img {
     width: 90%;
     margin-left: auto;
     position: relative;
-
 }
+
+.howWeDoTextContainer :is(h2) {
+    margin-left: 0.5em;
+}
+
+.howWeDoTextContainer :is(li) {
+    margin-left: 2em;
+}
+
 
 .howWeDoTextContainer::before {
     content: '';
@@ -92,7 +131,7 @@ img {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6em 36em 0; /* Pas de grootte van de afschuining aan in em */
+    border-width: 0 6em 47em 0; /* Pas de grootte van de afschuining aan in em */
     border-color: transparent var(--secundaryColor) transparent transparent;
 }
 
@@ -138,7 +177,14 @@ img {
 .whatDoYouGet {
     display: flex;
     flex-direction: column;
+}
 
+.whatDoYouGetTextContainer :is(h2) {
+    margin-left: 0.5em;
+}
+
+.whatDoYouGetTextContainer :is(li) {
+    margin-left: 2em;
 }
 
 .whatDoYouGetTextContainer {
@@ -146,7 +192,6 @@ img {
     width: 90%;
     margin-left: auto;
     position: relative;
-
 }
 
 .whatDoYouGetTextContainer::before {
@@ -157,7 +202,7 @@ img {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6em 45em 0; /* Pas de grootte van de afschuining aan in em */
+    border-width: 0 6em 57em 0; /* Pas de grootte van de afschuining aan in em */
     border-color: transparent var(--secundaryColor) transparent transparent;
 }
 
@@ -178,18 +223,37 @@ display: flex;
 
 /*fith block*/
 
+/*title slider*/
+.exampleProject{
+    background-color: var(--secundaryColor);
+}
+
+.sliderTitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sliderTitleContainer img {
+    width: 20%;
+
+}
+
 
 /*slider*/
 .slider-container {
     position: relative;
-    max-width: 800px;
-    margin: auto;
+    width: 100%;
     overflow: hidden;
+
+    height: 35em;
 }
 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
+
 }
 
 .slide {
@@ -197,18 +261,17 @@ display: flex;
 }
 
 img {
-    width: 100%;
-    height: 70%;
-}
+    width: 100%;}
 
 .prev, .next {
     position: absolute;
-    top: 35%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
     background: none;
     border: none;
     cursor: pointer;
+    width: 10%;
     z-index: 2; /* Ensure buttons appear above the slides */
 }
 
@@ -221,8 +284,164 @@ img {
 .next {
     right: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 
+.exampleProject article {
+    margin: 2em;
+}
+
+/*How we start*/
+
+/*progress function*/
+.howWeStart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.progressBar {
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+    width: 100%;
+    position: relative;
+
+}
+
+#progressBar1, #progressBar2 {
+
+}
+#progressBar1, #progressBar2, #progressBar3 {
+margin: 1.8em 0;
+height: 50%;
+    width: 7.5%;
+}
+#progressBar1 {
+background-color: var(--textColor);
+    color: var(--secundaryColor);
+}
+
+.progressBar button{
+    padding: 1em;
+    border-radius: 50%;
+    font-size: var(--titleSize);
+    font-weight: bold;
+    border: none;
 }
 
 
 
+/*.line::before {*/
+/*    content: "";*/
+/*    flex-grow: 1; !* Laat de lijn de resterende ruimte vullen *!*/
+/*    height: 1px;*/
+/*    background-color: var(--secundaryColor);*/
+/*    display: block;*/
+/*    margin-top: 10px; !* Voeg een marge toe onder de lijn *!*/
+/*}*/
+
+.line {
+    background-color: var(--secundaryColor);
+    width: 5%;
+    height: 7px;
+    border: 0 none;
+    margin: 5em 0 ;
+}
+
+.lineActive {
+    background-color: var(--textColor);
+    color: var(--secundaryColor);
+}
+
+.howWeStart figure{
+    background-color: var(--secundaryColor);
+    margin: 4em;
+
+}
+
+.progressBarBlocks{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progressBarContentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+margin: 2em;
+}
+
+.howWeStartImg {
+    width: 50%;
+}
+
+.progressBarButtonImg {
+width: 20%;
+    margin-top: 0.2em;
+}
+
+.progressBarContentBlock h2 {
+    font-size: 2em; /* Pas de gewenste grootte aan */
+}
+
+.progressBarContentBlock p {
+    font-size: 3em; /* Pas de gewenste grootte aan */
+}
+
+.progressBarContentBlock button {
+    font-size: 2.5em; /* Pas de gewenste grootte aan */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.howWeStartText {
+    margin: 2em;
+}
+
+.howWeStartText li {
+    margin-left: -1em;
+}
+
+
+
+.talk {
+    background-color: var(--secundaryColor);
+    display: flex;
+    flex-direction: column;
+    padding: 2em 8em ;
+    text-align: left;
+}
+
+.talk li{
+    margin: 1em 1em 1em -1em;
+}
+
+.talkLinkedin img {
+width: 6%
+
+}
+
+.talkLinkedin {
+display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    background-color: var(--secundaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
