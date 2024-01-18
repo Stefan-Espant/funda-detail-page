@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
 :root {
     /*text sizes*/
     --headTitleSize: 2em;
@@ -5,12 +7,16 @@
     --subTitleSize: 1.2em;
     --textSize: 1em;
     /*font properties*/
-    --textFont: 'Gilroy', sans-serif;
+    --textFont: 'Gilroy-Regular', sans-serif;
     /*colors*/
     --mainColor: #ABCDDB;
     --secundaryColor: #ffff;
     --tertairyColor: #D7E6EC;
     --textColor: #000000;
+}
+
+* {
+    font-family: var(--textFont);
 }
 
 /*text properties*/
@@ -22,21 +28,22 @@ h1 h2 h3 p {
 h1, h2, h3 {
     line-height: 1.2; /* of line-height: 1.2em; */
     letter-spacing: 0.05em;
+    font-weight: bold;
 }
 
 h1 {
     font-size: var(--headTitleSize);
-    font-weight: bold;
+   ;
 }
 
 h2 {
     font-size: var(--titleSize);
-    font-weight: bold;
+
 }
 
 h3 {
     font-size: var(--subTitleSize);
-    font-weight: bold;
+
 }
 
 p {
@@ -131,7 +138,7 @@ img {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6em 47em 0; /* Pas de grootte van de afschuining aan in em */
+    border-width: 0 6em 57em 0; /* Pas de grootte van de afschuining aan in em */
     border-color: transparent var(--secundaryColor) transparent transparent;
 }
 
@@ -202,7 +209,7 @@ img {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6em 57em 0; /* Pas de grootte van de afschuining aan in em */
+    border-width: 0 6.2em 61em 0; /* Pas de grootte van de afschuining aan in em */
     border-color: transparent var(--secundaryColor) transparent transparent;
 }
 
@@ -214,6 +221,11 @@ img {
 }
 
 .ourApproachContentBlocks {
+
+
+
+
+
     text-align: center;
     margin: 4em;
 display: flex;
@@ -444,4 +456,8 @@ form{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+input{
+    font-size: var(--textSize);
 }
