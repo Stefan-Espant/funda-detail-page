@@ -14,6 +14,8 @@
     --secundaryColor: #ffff;
     --tertairyColor: #D7E6EC;
     --textColor: #000000;
+
+    --margin: rem
 }
 
 
@@ -115,6 +117,9 @@
         flex-direction: column;
 
     }
+.howDoWeDoEmpty {
+    display: none;
+}
 
 
     .howWeDoTextContainer {
@@ -160,7 +165,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center; /* Voeg deze regel toe om de inhoud in het midden te centreren */
-        margin: 4em;
+        margin: var(--margin);
     }
 
     .customerReviewsImageContainer {
@@ -175,12 +180,33 @@
     }
 
     /*third block*/
-    .askUsTitleContainer {
-        margin: 1em 4em 6em;
+
+.askUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    .askUsImgContainer {
+       margin: 6rem;
+        display: none;
     }
 
-    .askUsTitleContainer ul {
-        margin-top: 4em;
+    .askUsTextContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+
+    }
+
+.askUsTextContainer img {
+    width: 15%;
+    margin: 6rem;
+    display: none;
+}
+
+    .askUsTextContainer ul {
+        margin-left: 1rem;
     }
 
     /*fourth block*/
@@ -277,8 +303,12 @@
     }
 
     .sliderTitle h2 {
-        font-size: 3.3em;
+        font-size: 3.7em;
         margin: 0 0 0.5em 0.3em;
+    }
+
+    .exampleProjectImgContainer {
+        display: none;
     }
 
     .sliderTitleContainer img {
@@ -348,7 +378,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+background-color: var(--tertairyColor);
     }
 
     .progressBar {
@@ -452,6 +482,10 @@
         width: 35%;
     }
 
+.howWeStartImgContainer {
+    display: none;
+}
+
     .howWeStartText {
         margin: 0 4em 4em 4em;
     }
@@ -524,7 +558,7 @@
     }
 
 /*responsive*/
-@media (min-width: 720px)  {
+@media (min-width: 900px)  {
     .whatDoYouGetTextContainer::before {
         content: '';
         position: absolute;
@@ -540,7 +574,10 @@
 
     .ourApproach .list {
         flex-direction: row;
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
+
 
 
 
@@ -558,6 +595,223 @@
     textarea {
         font-size: 0.8em;
     }
+
+
+
+
+
+}
+
+@media (min-width: 1400px)  {
+
+    .customerReviewsContentContainer{
+        margin-left: 0;
+        margin-right: 22rem;
+    }
+
+    .customerReviewsContentContainer img{
+        margin-left: 0;
+        margin-right: 22rem;
+        width: 35%;
+    }
+
+    /*ask us*/
+    .askUsImgContainer {
+        text-align: center;
+    }
+
+    .askUsTextContainer {
+        justify-content: center;
+    }
+
+    .askUsTextContainer img {
+        display: block;
+    }
+
+/*example projects*/
+
+
+    .exampleProjectText{
+        display: flex;
+        flex-direction: row;
+        margin-left: 35rem ;
+        margin-right: 45rem ;
+
+    }
+
+    .sliderTitleContainer {
+    justify-content: center;
+
+}
+
+    .sliderTitle {
+        margin-right: 11em;
+        margin-left: 6em;
+    }
+
+    .vanMeeuwenImg {
+        max-width: 7%;
+        padding-left: 5em;
+    }
+
+    .exampleProjectImgContainer {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .exampleProjectImgContainer img {
+        width: 30%;
+
+    }
+
+    #bigImg {
+    width: 60%;
+}
+
+    .slider-container {
+        display: none;
+    }
+
+/*how we start / progressbar*/
+    .howWeStartContainer {
+        background-color: var(--secundaryColor);
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    .progressBar {
+        display: none;
+    }
+
+    .progressBarContentBlock {
+        display: none;
+    }
+
+    .howWeStart {
+        margin-left: 15rem;
+        margin-right: 15rem;
+        padding: 15rem;
+    }
+    .howWeStartImgContainer {
+    display: flex;
+        flex-direction: row;
+    }
+
+    .howWeStartImgContainer img {
+    width: 100%;
+    }
+
+    .howeStartContentBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+
+
+
+/*talk and form*/
+    .talkAndContactContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+
+
+    }
+
+    .talk {
+        width: 50%;
+        padding-right: 10rem;
+    }
+
+    #linkedin {
+        width: 1%;
+    }
+
+    .talk img{
+        width: 40%;
+    }
+
+    .contact {
+        width: 50%;
+        padding-left: 15rem;
+    }
+
+
+
+}
+
+@media (min-width: 1700px) {
+    .howDoWeDo {
+        flex-direction: row-reverse;
+
+    }
+
+    .howWeDoTextContainer {
+        width: 100%;
+    }
+
+    .howDoWeDoEmpty {
+        display: block;
+        padding-left: 7rem;
+    }
+
+    /*ask us*/
+    .askUsImgContainer {
+        display: block;
+    }
+
+
+
+    .whatDoYouGet {
+        flex-direction: row;
+
+    }
+
+    .whatDoYouGetTextContainer {
+        width: 47%;
+    }
+
+    .whatDoYouGetEmpty {
+        display: block;
+        padding-right: 7rem;
+    }
+
+
+}
+
+@media (min-width: 2200px) {
+
+
+    .howWeDoTextContainer {
+        width: 100%;
+    }
+
+    .howDoWeDoEmpty {
+        padding-left: 30rem;
+    }
+}
+
+@media (min-width: 2500px) {
+
+    /*how we do*/
+    .howWeDoTextContainer {
+        width: 100%;
+    }
+
+    .howDoWeDoEmpty {
+        padding-left: 40rem;
+    }
+
+    /*customer review*/
+    .customerReviewsContentContainer {
+        margin-left: 40rem;
+    }
+
+
 }
 
 
