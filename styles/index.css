@@ -224,9 +224,19 @@
 
     }
 
-    .ourApproachContentContainer {
-        display: flex;
-        flex-direction: column;
+.ourApproach .list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ourApproachContentBlocks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+    .ourApproachContentBlocks img{
+        max-height: 400px;
     }
 
     .ourApproachContentContainer h2,
@@ -514,10 +524,7 @@
     }
 
 /*responsive*/
-@media all and (min-width: 600px){
-    * {
-
-    }
+@media (min-width: 720px)  {
     .whatDoYouGetTextContainer::before {
         content: '';
         position: absolute;
@@ -530,10 +537,12 @@
         border-color: transparent var(--secundaryColor) transparent transparent;
     }
 
-    .ourApproachContentContainer {
-        display: flex;
+
+    .ourApproach .list {
         flex-direction: row;
     }
+
+
 
 
 
