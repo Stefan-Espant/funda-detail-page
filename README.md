@@ -1,17 +1,34 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Informaat Landingspagina Project - Readme
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+## Inleiding
+Dit document geeft een overzicht van het Informaat Landingspagina Project, uitgevoerd voor Informaat, een ontwerpbureau gespecialiseerd in het bouwen van websites.
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## Doel
+Het project heeft als doel een nieuwe landingspagina te bouwen die aantrekkelijk is voor grotere bedrijven, die hen overtuigt om een website bij Informaat te laten maken.
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+## Oplevering
+De landingspagina wordt op 25-01-2024 opgeleverd.
 
-## Licentie
+## Vereisten
+- **Privacy Statement:** Inclusief een link naar het bestaande privacy statement op de originele website van Informaat.
+- **Bestandsbeheer via Figma:** Gebruik de aangeleverde Figma-bestanden als basis en pas deze indien nodig aan.
+- **Doelgroep:** Richt je op grotere klanten en begrijp hun behoeften.
+- **Eén pagina:** Het ontwerp moet bestaan uit één pagina.
+- **Toegankelijkheid:** Volgens de WCAG-specificatie, met details bij de levering.
+- **Animatie:** Paginascherm-animatie en knop-hover-animaties.
+- **Functionaliteiten:**
+    - *Slider (Optioneel):* Overweeg een slider als afbeeldingen worden afgekapt bij kleinere views.
+    - *Contactformulier:* Gebruiksvriendelijk met foutmeldingen.
+    - *Responsive Design:* Zorg dat de landingspagina er goed uitziet op alle schermformaten, met een minimale viewport van 320px.
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+## Gebruikers
+De landingspagina is bedoeld voor grote bedrijven die overwegen een website te laten maken door Informaat.
+
+## Relatie met Andere Projecten
+Het ontwerp moet passend blijven bij de hoofdwebsite en andere landingspagina's van Informaat voor consistentie in de webomgeving.
+
+---
+
+©Informaat. Alle rechten voorbehouden.
+
 

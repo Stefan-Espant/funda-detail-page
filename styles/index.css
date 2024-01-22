@@ -743,8 +743,7 @@ background-color: var(--tertairyColor);
 
 
 }
-
-@media (min-width: 1700px) {
+@media (min-width: 1200px) {
     .howDoWeDo {
         flex-direction: row-reverse;
 
