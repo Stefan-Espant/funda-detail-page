@@ -3,9 +3,9 @@
 
 :root {
     /*text sizes*/
-    --headTitleSize: 2rem;
-    --titleSize: 1.5rem;
-    --subTitleSize: 1.5rem;
+    --headTitleSize: 2em;
+    --titleSize: 1.5em;
+    --subTitleSize: 1.5em;
     --textSize: 1em;
     /*font properties*/
     --textFont: 'Gilroy-Regular', sans-serif;
@@ -24,6 +24,18 @@
         font-family: var(--textFont);
     }
 
+    body {
+
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden; /* Om horizontaal scrollen te voorkomen */
+    }
+
+    main {
+        max-width: 100%;
+    }
     /*text properties*/
     h1 h2 h3 p {
         font-family: var(--textFont);
@@ -103,11 +115,15 @@
 
     /*image settings*/
     header img {
-        max-width: 100%;
+        width: 100%;
     }
 
     img {
         max-width: 100%;
+    }
+
+    .howDoWeDo img{
+        max-width: 77%;
     }
 
     /*first block*/
@@ -124,7 +140,7 @@
 
     .howWeDoTextContainer {
         background-color: var(--secundaryColor);
-        width: 90%;
+        max-width: 90%;
         margin-left: auto;
         position: relative;
     }
@@ -297,22 +313,24 @@
     }
 
     .sliderTitle p {
-        font-size: 2.03em;
+        font-size: 1em;
         margin: 1em 0 0 0.5em;
         font-family: 'Gilroy-Light', sans-serif
     }
 
     .sliderTitle h2 {
-        font-size: 3.7em;
+        font-size: 1em;
         margin: 0 0 0.5em 0.3em;
     }
 
     .exampleProjectImgContainer {
         display: none;
+        max-width: 100%;
     }
 
     .sliderTitleContainer img {
-        width: 50%;
+        max-width: 100%;
+
 
     }
 
@@ -323,7 +341,7 @@
         width: 100%;
         overflow: hidden;
 
-        height: 35em;
+        height: 10em;
     }
 
     .slider {
@@ -437,15 +455,14 @@ background-color: var(--tertairyColor);
 
     .howWeStart figure {
         background-color: var(--secundaryColor);
-        margin: 4em;
+
 
     }
 
     .progressBarBlocks {
         display: flex;
         flex-direction: row;
-        overflow: hidden;
-        width: 100%;
+        max-width: 100%;
     }
 
     .progressBarContentBlock {
@@ -454,11 +471,12 @@ background-color: var(--tertairyColor);
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 2em;
+        margin: 0.5em;
+        max-width: 30%;
     }
 
     .howWeStartImg {
-        width: 50%;
+        max-width: 50%;
     }
 
     .progressBarButtonImg {
