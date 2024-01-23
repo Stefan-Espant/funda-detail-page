@@ -84,7 +84,7 @@
         height: 0;
         width: 0;
         left: -2em;
-        top: 2.5em;
+        top: 1.6em;
         position: relative;
     }
 
@@ -123,7 +123,7 @@
     }
 
     .howDoWeDo img{
-        max-width: 77%;
+        max-width: 100%;
     }
 
     /*first block*/
@@ -140,8 +140,9 @@
 
     .howWeDoTextContainer {
         background-color: var(--secundaryColor);
-        max-width: 90%;
-        margin-left: auto;
+        max-width: 80%;
+        padding-bottom: 2em;
+        margin-left: 6em;
         position: relative;
     }
 
@@ -162,8 +163,13 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 6em 47em 0; /* Pas de grootte van de afschuining aan in em */
+        border-width: 0 6em 32.7em 0; /* Pas de grootte van de afschuining aan in em */
         border-color: transparent var(--secundaryColor) transparent transparent;
+    }
+
+    .howDoWeDo button{
+        margin-left: 1.1em;
+        margin-top: 2em;
     }
 
     /*second block*/
@@ -173,15 +179,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-
+        padding-bottom: 3em;
     }
 
     .customerReviewsContentContainer {
         display: flex;
         flex-direction: column;
         justify-content: center; /* Voeg deze regel toe om de inhoud in het midden te centreren */
-        margin: var(--margin);
+        margin-top: 3em;
+        width: 80%;
     }
 
     .customerReviewsImageContainer {
@@ -192,7 +198,7 @@
     .customerReviewsImageContainer img {
         max-width: 100%;
         height: auto;
-        width: 80%;
+        width: 100%;
     }
 
     /*third block*/
@@ -204,14 +210,14 @@
 }
 
     .askUsImgContainer {
-       margin: 6rem;
+       margin: 6em;
         display: none;
     }
 
     .askUsTextContainer {
         display: flex;
         flex-direction: column;
-        margin: 3rem;
+        margin: 3em;
 
     }
 
@@ -242,7 +248,8 @@
     .whatDoYouGetTextContainer {
         background-color: var(--secundaryColor);
         width: 90%;
-        margin-left: auto;
+        padding-bottom: 4em;
+        margin-left: 3em;
         position: relative;
     }
 
@@ -254,7 +261,7 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 6.2em 60em 0; /* Pas de grootte van de afschuining aan in em */
+        border-width: 0 6em 33.1em 0; /* Pas de grootte van de afschuining aan in em */
         border-color: transparent var(--secundaryColor) transparent transparent;
     }
 
@@ -302,6 +309,7 @@
     /*title slider*/
     .exampleProject {
         background-color: var(--secundaryColor);
+        padding-bottom: 4em;
     }
 
     .sliderTitleContainer {
@@ -330,8 +338,6 @@
 
     .sliderTitleContainer img {
         max-width: 100%;
-
-
     }
 
 
@@ -547,7 +553,7 @@ background-color: var(--tertairyColor);
     form {
         display: flex;
         flex-direction: column;
-        font-size: 2.5em;
+        font-size: 1em;
 
 
     }
@@ -668,7 +674,7 @@ background-color: var(--tertairyColor);
     }
 
     .vanMeeuwenImg {
-        max-width: 7%;
+        max-width: 5%;
         padding-left: 5em;
     }
 
@@ -693,11 +699,19 @@ background-color: var(--tertairyColor);
 
 /*how we start / progressbar*/
     .howWeStartContainer {
-        background-color: var(--secundaryColor);
-        padding: 1rem;
+        background-color: pink;
         width: 100%;
         height: 100%;
     }
+
+    .progressBarContentBlock p {
+        font-size: var(--textSize);
+    }
+
+    .howWeStartContainer img {
+        width: 20%;
+    }
+
     .progressBar {
         display: none;
     }
@@ -707,9 +721,9 @@ background-color: var(--tertairyColor);
     }
 
     .howWeStart {
-        margin-left: 15rem;
-        margin-right: 15rem;
-        padding: 15rem;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 1em;
     }
     .howWeStartImgContainer {
     display: flex;
@@ -717,15 +731,15 @@ background-color: var(--tertairyColor);
     }
 
     .howWeStartImgContainer img {
-    width: 100%;
+  width: 100%;
     }
 
     .howeStartContentBlock {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
 
@@ -742,7 +756,7 @@ background-color: var(--tertairyColor);
 
     .talk {
         width: 50%;
-        padding-right: 10rem;
+        padding-right: 1em;
     }
 
     #linkedin {
@@ -755,7 +769,7 @@ background-color: var(--tertairyColor);
 
     .contact {
         width: 50%;
-        padding-left: 15rem;
+        padding-left: 2em;
     }
 
 
@@ -789,7 +803,7 @@ background-color: var(--tertairyColor);
     }
 
     .whatDoYouGetTextContainer {
-        width: 47%;
+        width: 100%;
     }
 
     .whatDoYouGetEmpty {
@@ -812,7 +826,7 @@ background-color: var(--tertairyColor);
     }
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 800px) {
 
     /*how we do*/
     .howWeDoTextContainer {
