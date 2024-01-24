@@ -1,18 +1,18 @@
 # 🛬 Informaat Landingspagina
-schreenshot
+screenshot
 
 Dit document geeft een overzicht van het Informaat Landingspagina Project, uitgevoerd voor Informaat, een ontwerpbureau gespecialiseerd in het bouwen van websites.
 
 ## 📚 Inhoudsopgave
 
 * [Beschrijving](#beschrijving)
-*[Opdrahtgever](#opdragtgever)
+* [Opdrachtgever](#opdrachtgever)
 * [Kenmerken](#kenmerken)
 * [Installatie](#installatie)
 * [Gebruik](#gebruik)
 * [Licentie](#licentie)
 
-## 🏗️ Odrachtgever
+## 🏗️ Opdrachtgever
 De opdracht is voor het ontwerpbureau Informaat. Informaat ontwerpt/bouwt websites en richt zich vooral op grotere klanten.
 
 ## ⚡ Kenmerken
@@ -29,9 +29,9 @@ Dit project is gemaakt met HTML, CSS en JavaScript. Verder staat hieronder een k
 - ⌚ CSS
 - 📲 JavaScript
 
-## 🚀 Ontwerpprobleem en oplossing
+## 🚀 Ontwerp probleem en oplossing
 
-### Desktopview namaken
+### Desktop view namaken
 Ik heb een figma bestand gekregen met de desktop view. Deze moest vervolgens omgezet worden naar een webpagina.
 
 Oplossing:
@@ -89,10 +89,6 @@ Niet gelukt:
 -Scrol animaties ❌
 
 -Progressbar functie ❌
-
-
-
-
 
 ## 📥 Installatie
 1. Clone of download deze respository.
